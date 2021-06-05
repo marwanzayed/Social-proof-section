@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Spartan";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:#fff;
+    width: 100%
+}
+
+main {
+    background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg"), #fff;
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    padding: 80px 25px;
+    width: 375px;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    line-height: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.centered {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+.review-flex-container {
+    align-items: center;
+    background: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.bottom-review-flex-container {
+    margin-bottom: 30px;
+}
+
+.review-flex-container img {
+    margin: 0px 5px;
+}
+
+.review-flex-container p {
+    color: hsl(300, 43%, 22%);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.review-star-container {
+    align-items: center;
+    background: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.customer-review-card {
+    background: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    font-size: 12.75px;
+    font-weight: 400;
+    line-height: 175%;
+    margin-top: 15px;
+    padding: 30px 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.customer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.customer-image img {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 25px;
+    width: 40px;
+}
+
+.customer-stats {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.customer-name {
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+
+.customer-status {
+    color: hsl(333, 80%, 67%);
+}
+
+.attribution-container {
+    margin: auto auto;
+    width: 375px;
+}
+
+.attribution {
+    background: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    background: #fff;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+        
+    body {
+        background:#fff;
+        width: 100%
+    }
+
+    main {
+        background: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg"), #fff;
+        background-position: 3% -4%, 100% 100%;
+        background-repeat: no-repeat, no-repeat;
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
+        min-height: 100vh;
+        padding: 120px 160px;
+        width: 100%;
+    }
+
+    #desktop-review-area-main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #desktop-copy-area {
+        display: flex;
+        flex-basis: 40%;
+        flex-direction: column;
+    }
+
+    #desktop-review-card-area {
+        align-items: flex-end;
+        display: flex;
+        flex-basis: 60%;
+        flex-direction: column;
+        justify-content: right;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    h1 {
+        color: hsl(300, 43%, 22%);
+        font-size: 48px;
+        line-height: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .centered {
+        color: hsl(303, 10%, 53%);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 35px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .review-flex-container {
+        align-items: center;
+        background: hsl(300, 24%, 96%);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        padding: 15px;
+        padding-right: 30px;
+        width: 475px;
+    }
+
+    #review-1 {
+        margin-right: 90px;
+    }
+
+    #review-2 {
+        margin-right: 45px;
+    }
+
+    .bottom-review-flex-container {
+        margin-bottom: 30px;
+    }
+
+    .review-flex-container img {
+        margin: 0px 5px;
+    }
+
+    .review-flex-container p {
+        color: hsl(300, 43%, 22%);
+        font-size: 14px;
+        font-weight: 700;
+        margin: 5px;
+    }
+
+    .review-star-container {
+        align-items: center;
+        background: hsl(300, 24%, 96%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px 5px;
+        margin-right: 20px;
+    }
+
+    #customer-review-card-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 250px;
+        width: 100%;
+    }
+
+    .customer-review-card {
+        background: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        color: hsl(300, 24%, 96%);
+        display: flex;
+        flex-direction: column;
+        font-size: 12.75px;
+        font-weight: 400;
+        height: 225px;
+        line-height: 175%;
+        margin-top: 15px;
+        min-height: 150px;
+        padding: 30px 30px;
+        text-align: left;
+        width: 31.5%;
+    }
+
+    #customer-review-card-2 {
+        margin-top: 30px;
+    }
+
+    #customer-review-card-3 {
+        margin-top: 45px;
+    }
+
+    .customer {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
+    .customer-image img {
+        border-radius: 50%;
+        height: 40px;
+        margin-right: 25px;
+        width: 40px;
+    }
+
+    .customer-stats {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+
+    .customer-name {
+        font-weight: 700;
+        margin-bottom: -2px;
+    }
+
+    .customer-status {
+        color: hsl(333, 80%, 67%);
+    }
+
+    .attribution-container {
+        margin: auto auto;
+        width: 375px;
+    }
+
+    .attribution {
+        background: #fff;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        background: #fff;
+        color: hsl(228, 45%, 44%);
+    }
+
+}
